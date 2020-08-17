@@ -26,9 +26,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun showErrorDialog() {
         AwesomeErrorDialog(this)
-                .setButtonText(getString(R.string.dialog_ok_button))
+                .setButtonText(getString(R.string.dialog_ok_button), false)
                 .setTitle(R.string.app_name)
                 .setMessage(R.string.app_name)
+                .setColoredCircle(R.color.dialogErrorBackgroundColor)
+                .setCancelable(true)
+                .setDialogIconAndColor(R.drawable.ic_dialog_error, R.color.white)
                 .show()
     }
 
@@ -41,7 +44,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showWarningDialog() {
-        AwesomeWarningDialog(this).setButtonText(getString(R.string.dialog_ok_button)).show()
+        AwesomeWarningDialog(this)
+                .setButtonText(getString(R.string.dialog_ok_button))
+                .show()
     }
 
     private fun showNoticeDialog() {
