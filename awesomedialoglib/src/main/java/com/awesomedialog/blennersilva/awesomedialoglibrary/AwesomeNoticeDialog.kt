@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.RelativeLayout
 
 import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Closure
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Mode
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.setColorFilter
 
 /**
  * Created by blennersilva on 21/08/17.
@@ -29,7 +31,7 @@ class AwesomeNoticeDialog(context: Context) : AwesomeDialogBuilder<AwesomeNotice
     }
 
     fun setDialogBodyBackgroundColor(color: Int): AwesomeNoticeDialog {
-        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), PorterDuff.Mode.SRC_IN)
+        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), Mode.SRC_IN)
         return this
     }
 
@@ -42,7 +44,7 @@ class AwesomeNoticeDialog(context: Context) : AwesomeDialogBuilder<AwesomeNotice
     }
 
     fun setButtonBackgroundColor(buttonBackground: Int): AwesomeNoticeDialog {
-        btDialogOk.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), PorterDuff.Mode.SRC_IN)
+        btDialogOk.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), Mode.SRC_IN)
         return this
     }
 

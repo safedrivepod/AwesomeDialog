@@ -6,6 +6,9 @@ import androidx.core.content.ContextCompat
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Mode
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.setColorFilter
+
 /**
  * Created by blennersilva on 23/08/17.
  */
@@ -24,12 +27,12 @@ class AwesomeProgressDialog(context: Context) : AwesomeDialogBuilder<AwesomeProg
     }
 
     fun setDialogBodyBackgroundColor(color: Int): AwesomeProgressDialog {
-        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), PorterDuff.Mode.SRC_IN)
+        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), Mode.SRC_IN)
         return this
     }
 
     fun setProgressBarColor(color: Int): AwesomeProgressDialog {
-        progressBar.indeterminateDrawable?.setColorFilter(ContextCompat.getColor(context!!, color), PorterDuff.Mode.SRC_IN)
+        progressBar.indeterminateDrawable?.setColorFilter(ContextCompat.getColor(context!!, color), Mode.SRC_IN)
         return this
     }
 }

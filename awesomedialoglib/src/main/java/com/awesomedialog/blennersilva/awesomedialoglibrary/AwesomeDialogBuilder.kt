@@ -4,7 +4,6 @@ import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
-import android.graphics.PorterDuff
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import androidx.annotation.StringRes
@@ -18,7 +17,6 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.core.content.res.ResourcesCompat
 import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Mode
 import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.setColorFilter
 
@@ -80,7 +78,7 @@ abstract class AwesomeDialogBuilder<T>(context: Context){
     }
 
     fun setColoredCircle(color: Int): T {
-        coloredCircle.background.setColorFilter(ContextCompat.getColor(context!!, color), PorterDuff.Mode.SRC_IN)
+        coloredCircle.background.setColorFilter(ContextCompat.getColor(context!!, color), Mode.SRC_IN)
         @Suppress("UNCHECKED_CAST")
         return this as T
     }
@@ -151,6 +149,7 @@ abstract class AwesomeDialogBuilder<T>(context: Context){
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                 drawable = context!!.getDrawable(icon)
             } else {
+                @Suppress("DEPRECATION")
                 drawable = context!!.resources.getDrawable(icon)
             }
 

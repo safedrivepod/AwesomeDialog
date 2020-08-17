@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.RelativeLayout
 
 import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Closure
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Mode
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.setColorFilter
 
 /**
  * Created by blennersilva on 23/08/17.
@@ -40,7 +42,7 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
     }
 
     fun setDialogBodyBackgroundColor(color: Int): AwesomeInfoDialog {
-        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), PorterDuff.Mode.SRC_IN)
+        dialogBody.background.setColorFilter(ContextCompat.getColor(context!!, color), Mode.SRC_IN)
 
         return this
     }
@@ -72,7 +74,7 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
 
     fun setPositiveButtonbackgroundColor(buttonBackground: Int): AwesomeInfoDialog {
         if (positiveButton != null) {
-            positiveButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), PorterDuff.Mode.SRC_IN)
+            positiveButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), Mode.SRC_IN)
         }
 
         return this
@@ -97,7 +99,7 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
 
     fun setNegativeButtonbackgroundColor(buttonBackground: Int): AwesomeInfoDialog {
         if (negativeButton != null) {
-            negativeButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), PorterDuff.Mode.SRC_IN)
+            negativeButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), Mode.SRC_IN)
         }
 
         return this
@@ -121,7 +123,7 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
 
     fun setNeutralButtonbackgroundColor(buttonBackground: Int): AwesomeInfoDialog {
         if (neutralButton != null) {
-            neutralButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), PorterDuff.Mode.SRC_IN)
+            neutralButton!!.background.setColorFilter(ContextCompat.getColor(context!!, buttonBackground), Mode.SRC_IN)
         }
         return this
     }
