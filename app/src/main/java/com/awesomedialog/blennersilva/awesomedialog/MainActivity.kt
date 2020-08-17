@@ -25,7 +25,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showErrorDialog() {
-        AwesomeErrorDialog(this).setButtonText(getString(R.string.dialog_ok_button)).show()
+        AwesomeErrorDialog(this)
+                .setButtonText(getString(R.string.dialog_ok_button))
+                .setTitle(R.string.app_name)
+                .setMessage(R.string.app_name)
+                .show()
     }
 
     private fun showInfoDialog() {

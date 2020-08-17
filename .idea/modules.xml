@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AwesomeDialog.iml" filepath="$PROJECT_DIR$/AwesomeDialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AwesomeDialog-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AwesomeDialog-app.iml" group="AwesomeDialog/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-dev-AwesomeDialog.iml" filepath="$PROJECT_DIR$/.idea/modules/android-dev-AwesomeDialog.iml" group="AwesomeDialog" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/awesomedialoglib/awesomedialoglib.iml" filepath="$PROJECT_DIR$/awesomedialoglib/awesomedialoglib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/awesomedialoglib/com.github.blennerSilva-awesomedialoglib.iml" filepath="$PROJECT_DIR$/.idea/modules/awesomedialoglib/com.github.blennerSilva-awesomedialoglib.iml" group="AwesomeDialog/awesomedialoglib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AwesomeDialog.iml" filepath="$PROJECT_DIR$/.idea/AwesomeDialog.iml" group="AwesomeDialog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="AwesomeDialog/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/awesomedialoglib/awesomedialoglib.iml" filepath="$PROJECT_DIR$/.idea/modules/awesomedialoglib/awesomedialoglib.iml" group="AwesomeDialog/awesomedialoglib" />
     </modules>
   </component>
 </project>
