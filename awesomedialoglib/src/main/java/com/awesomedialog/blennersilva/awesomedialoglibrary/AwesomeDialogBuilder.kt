@@ -18,6 +18,9 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.Mode
+import com.awesomedialog.blennersilva.awesomedialoglibrary.interfaces.setColorFilter
 
 /**
  * Created by blennersilva on 23/08/17.
@@ -151,7 +154,7 @@ abstract class AwesomeDialogBuilder<T>(context: Context){
                 drawable = context!!.resources.getDrawable(icon)
             }
 
-            drawable?.setColorFilter(ContextCompat.getColor(context, color), PorterDuff.Mode.SRC_IN)
+            drawable?.setColorFilter(ContextCompat.getColor(context, color), Mode.SRC_IN)
 
             return drawable
         }
