@@ -2,7 +2,7 @@ package com.awesomedialog.blennersilva.awesomedialoglibrary
 
 import android.content.Context
 import android.graphics.PorterDuff
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.view.View
 import android.widget.Button
 import android.widget.RelativeLayout
@@ -51,9 +51,10 @@ class AwesomeWarningDialog(context: Context) : AwesomeDialogBuilder<AwesomeWarni
         return this
     }
 
-    fun setButtonText(text: String): AwesomeWarningDialog {
+    fun setButtonText(text: String, allCaps: Boolean = true): AwesomeWarningDialog {
         btDialogOk.text = text
         btDialogOk.visibility = View.VISIBLE
+        btDialogOk.isAllCaps = allCaps
         return this
     }
 }

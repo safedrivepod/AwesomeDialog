@@ -2,7 +2,7 @@ package com.awesomedialog.blennersilva.awesomedialoglibrary
 
 import android.content.Context
 import android.graphics.PorterDuff
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.view.View
 import android.widget.Button
 import android.widget.RelativeLayout
@@ -85,10 +85,11 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
         return this
     }
 
-    fun setPositiveButtonText(text: String): AwesomeInfoDialog {
+    fun setPositiveButtonText(text: String, allCaps: Boolean = true): AwesomeInfoDialog {
         if (positiveButton != null) {
             positiveButton!!.text = text
             positiveButton!!.visibility = View.VISIBLE
+            positiveButton!!.isAllCaps = allCaps
         }
 
         return this
@@ -102,9 +103,10 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
         return this
     }
 
-    fun setNegativeButtonText(text: String): AwesomeInfoDialog {
+    fun setNegativeButtonText(text: String, allCaps: Boolean = true): AwesomeInfoDialog {
         if (negativeButton != null) {
             negativeButton!!.text = text
+            negativeButton!!.isAllCaps = allCaps
         }
         return this
     }
@@ -124,9 +126,10 @@ class AwesomeInfoDialog(context: Context) : AwesomeDialogBuilder<AwesomeInfoDial
         return this
     }
 
-    fun setNeutralButtonText(text: String): AwesomeInfoDialog {
+    fun setNeutralButtonText(text: String, allCaps: Boolean = true): AwesomeInfoDialog {
         if (neutralButton != null) {
             neutralButton!!.text = text
+            negativeButton!!.isAllCaps = allCaps
         }
         return this
     }
